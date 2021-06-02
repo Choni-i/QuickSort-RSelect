@@ -2,8 +2,7 @@ package ru.vsu.parshina;
 
 import java.io.*;
 import java.util.*;
-//Замечание от дяди Ногих: лучше было сделать объект, который имеет в качестве поля индексы, а не класть по 2 и извлекать по 2.
-//Так разумней, согласись
+//Замечание
 //0-первый
 //1 - последний
 //2 - рандомный
@@ -17,7 +16,7 @@ class QUickStackSort {
     public static void NewK () {
         k = 0;
     }
-    private static int partition(int[] data, int left, int right, int a) {//честно посмотрела где то в интернете, по другому не работает :(
+    private static int partition(int[] data, int left, int right, int a) {//честно посмотрела где то в интернете или у Насти, я уже не помню, по другому не работает :(
         int temp = data[right];
         data[right] = data[a];
         data[a] = temp;
